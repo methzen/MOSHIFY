@@ -4,6 +4,7 @@
     --color-accent: #ec4826;
     --color-headings: #17105c;
     --color-body: #908da2;
+    --color-border: #ccc;
 }
 
 *, *::after,*::before{
@@ -226,4 +227,39 @@ a{
         font-size: 1.5rem;
     }
     
+}
+
+/* Input */
+
+.input{
+    padding: 1.5rem 3.5rem;
+    border: 2px solid var(--color-border);
+    border-radius: 30px;
+    outline: 0;
+    color:var(--color-headings);
+    font-size: 2rem;
+}
+
+::placeholder{
+    color: #cdcbd7;
+}
+
+.input-group{
+    border: 2px solid var(--color-border);
+    border-radius: 30px;
+    outline: 0;
+    color:var(--color-headings);
+    font-size: 2rem;
+    display: flex;
+    }
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 1024px){
+    .input{
+        font-size: 1.5rem;
+        }
 }
