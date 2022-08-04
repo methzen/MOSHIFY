@@ -25,6 +25,8 @@ body {
 h1, h2, h3, h4, h5, h6{
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
+    text-transform: capitalize;
 }
 
 h1{
@@ -202,6 +204,10 @@ a{
 .btn--primary:hover{
     background: #3a8ffd;
 }
+
+.btn--stretched {
+    padding: 2rem 6rem;
+    }
 
 .btn--secondary{
     background: var(--color-secondary);
@@ -575,11 +581,11 @@ overflow: visible;
 
 .block--skew-right{
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
     }
 .block--skew-left{
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
     }
 
 .container {
@@ -643,5 +649,33 @@ overflow: visible;
 
     .nav__item {
         border-bottom: 0;
+    }
+}
+
+/* HERO */
+
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);  
+}
+
+.hero__content {
+    align-self: center;
+}
+
+.hero__banner {
+    width: 100%;
+    align-self: center;
+}
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin : 2rem 0 5rem
+}
+
+@media screen and (min-width: 768px){
+    .hero{
+        padding-top:0;
     }
 }
