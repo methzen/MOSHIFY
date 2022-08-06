@@ -758,3 +758,24 @@ overflow: visible;
    max-width: 550px;
    margin: 0 auto;
 }
+
+/* Features block */
+
+.features {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+
+.features:nth-of-type(even){    
+    margin-top: 6rem;
+    }
+
+.features__image {
+    width: 100%;
+    }
+
+@media screen and (min-width: 768px){
+    .features:nth-of-type(even) .content__features {    
+        order:2;
+        }
+}
