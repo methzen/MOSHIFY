@@ -197,7 +197,7 @@ a{
     cursor: pointer;
     font-size: 1.8rem;
     font-weight: 600;
-    padding: 2rem 3rem;
+    padding: 2rem 3vw;
     outline: 0;
     text-transform: uppercase;
     white-space: nowrap;
@@ -300,6 +300,7 @@ a{
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn {
@@ -896,4 +897,8 @@ overflow: visible;
     .footer__heading{
         font-size: 1.6rem;
     }
+}
+/* Callout Signup */
+.callout-signup {
+    transform: translateY(5rem);
 }
