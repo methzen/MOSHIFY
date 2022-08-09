@@ -1,0 +1,25 @@
+{
+  "name": "moshify",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/methzen/MOSHIFY.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/methzen/MOSHIFY/issues"
+  },
+  "homepage": "https://github.com/methzen/MOSHIFY#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
